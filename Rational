@@ -1,0 +1,20 @@
+package rationalnumberstuff;
+
+public class Rational {
+	private int top;
+	private int bot;
+	public String printRational(){
+		return (top + "/" + bot);
+	}
+	public String toString(){
+		return ("Your number is " + top + "/" + bot);
+	}
+	Rational(int c, int b){
+		top = c;
+		bot = b;
+	}
+	Rational(){
+		top = 0;
+		bot = 1;
+	}
+}
