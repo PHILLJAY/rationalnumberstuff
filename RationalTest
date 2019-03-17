@@ -8,8 +8,10 @@ public class RationalTest {
 		int c = in.nextInt();
 		int b = in.nextInt();
 		Rational Bongus = new Rational(c,b);
-		System.out.println(Bongus.printRational());
 		System.out.println(Bongus);
+		System.out.println(Bongus.reduce());
+		System.out.println(Bongus.printRational());
+
 		// TODO Auto-generated method stub
 
 	}
