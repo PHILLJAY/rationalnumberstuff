@@ -51,7 +51,20 @@ public class Rational {
 				return gcd(m, n % m);
 		}
 	}
-	Rational(double c, double b){
+	public Rational reduce(){
+		int v = gcd();
+		int m = top;
+		int n = bot;
+		m = m/v;
+		n = n/v;
+		Rational Bum = new Rational(m,n);
+		return Bum;
+	}
+	public Rational add(rational c) {
+		
+		return o;
+	}
+Rational(double c, double b){
 		top = (int) Math.round(c);
 		bot = (int) Math.round(b);
 	}
