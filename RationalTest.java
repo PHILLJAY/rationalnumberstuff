@@ -9,7 +9,11 @@ public class RationalTest {
 		int b = in.nextInt();
 		Rational Bongus = new Rational(c,b);
 		System.out.println(Bongus);
-		System.out.println(Bongus.reduce());
+		c = in.nextInt();
+		b = in.nextInt();
+		Rational Fargus = new Rational(c,b);
+		System.out.println(Fargus.add(Bongus));
+		
 		System.out.println(Bongus.printRational());
 
 		// TODO Auto-generated method stub
